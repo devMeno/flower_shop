@@ -1,13 +1,13 @@
-import './App.css'
-import Box from "./components/globalComponents/box.tsx";
-import SectionTitle from "./components/globalComponents/sectionTitle.tsx";
 import Home from "./pages/home.tsx";
+import Category from "./pages/category.tsx";
+import Product from "./pages/product.tsx";
+
 
 function App() {
 
   return (
       <>
-		  <Home/>
+		  <Product/>
       </>
   )
 }

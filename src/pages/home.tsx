@@ -1,20 +1,34 @@
 import SectionTitle from "../components/globalComponents/sectionTitle.tsx";
 import Box from "../components/globalComponents/box.tsx";
+import Product from "../components/pagesComponents/home/product.tsx";
+import Footer from "../components/globalComponents/footer.tsx";
 
 const Home = () => {
 	return (
 		<div>
-			<div>
-				<div className={'py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
+			<div className={'xl:flex'}>
+				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 					<div className={'pb-[35px] border-b-[1px] border-black'}>
 						<span className={'font-semibold text-[40px] md:text-[67px]'}>Kyiv LuxeBouquets</span>
 						<p className={'text-[18px]'}>Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our <span className={'font-bold'}>Online Flower Delivery Service</span></p>
 					</div>
-					<div className={'pt-[24px] flex'}>
+					<div className={'mt-[24px] flex'}>
 						<div className={'w-1/2 border-r-[1px] border-black'}>
-							<img src="" alt=""/>
+							<img src="/public/images/pictures/home/img%20hero.png" alt="" className={'w-[155.5px] h-[180px] md:w-[95%] md:h-[256px] xl:size-[256px]'}/>
+						</div>
+						<div className={'w-1/2 border-l-[1px] border-black relative'}>
+							<p className={'absolute bottom-0 ml-[16px] md:ml-[24px] text-[11px] md:text-[14px]'}>
+								Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.
+							</p>
 						</div>
 					</div>
+				</div>
+				<div className={'xl:w-1/2'}>
+					<Product/>
+					<Product/>
+					<Product/>
+					<Product/>
+					<Product/>
 				</div>
 			</div>
 			<div className={'w-full xl:flex'}>
@@ -124,6 +138,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };
