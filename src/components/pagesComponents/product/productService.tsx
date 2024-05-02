@@ -2,36 +2,36 @@ export const ProductService = {
 	getProductsData() {
 		return [
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 			{
-				name: 'Michael Wang',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias cum, deleniti esse est expedita nam obcaecati omnis provident quas qui, repellendus sapiente sed, similique suscipit vel vitae. Minus, voluptate!'
+				name: 'Glass Vase',
+				price: 100,
 			},
 		];
 	},
