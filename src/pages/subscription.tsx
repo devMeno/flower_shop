@@ -54,14 +54,11 @@ const Subscription = () => {
 					<SectionTitle title={'How does it work?'}/>
 				</div>
 				<div className={'w-full xl:w-1/2'}>
-					<Box title={'Choose a plan'}
-						 text={"'Select the subscription plan that suits you best from our three bouquet designs: classic, seasonal, and deluxe. Each plan comes with a designer vase, free delivery, and a discount of up to 30%. Our seasonal and deluxe plans also include a luxurious scented candle to enhance the ambiance.'"}
+					<Box title={'Choose a plan'} text={"'Select the subscription plan that suits you best from our three bouquet designs: classic, seasonal, and deluxe. Each plan comes with a designer vase, free delivery, and a discount of up to 30%. Our seasonal and deluxe plans also include a luxurious scented candle to enhance the ambiance.'"}
 					/>
-					<Box title={'Frequency and Duration'}
-						 text={'Choose delivery frequency: once a week, every two weeks, or once a month. Then, select your subscription duration from 3 to 12 months. Enjoy savings with a longer subscription. We understand that every customer has different needs, and we aim to provide flexible subscription options that cater to your specific preferences.'}
+					<Box title={'Frequency and Duration'} text={'Choose delivery frequency: once a week, every two weeks, or once a month. Then, select your subscription duration from 3 to 12 months. Enjoy savings with a longer subscription. We understand that every customer has different needs, and we aim to provide flexible subscription options that cater to your specific preferences.'}
 					/>
-					<Box title={'Pay once'}
-						 text={'After entering your contact and delivery information and paying for your subscription, you can sit back and relax, knowing that you have secured a regular supply of fresh, stunning flowers for yourself or your loved ones'}/>
+					<Box title={'Pay once'} text={'After entering your contact and delivery information and paying for your subscription, you can sit back and relax, knowing that you have secured a regular supply of fresh, stunning flowers for yourself or your loved ones'}/>
 				</div>
 			</div>
 			<div className={'xl:flex xl:flex-row-reverse'}>
@@ -80,8 +77,7 @@ const Subscription = () => {
 					<div className={'w-full'}>
 						<div className={'md:flex w-full'}>
 							<div className={'w-full md:w-1/2 border-[1px] border-[#D2D2D7]'}>
-								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt=""
-									 className={'w-full'}/>
+								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt="" className={'w-full'}/>
 							</div>
 							<div className={'w-full md:w-1/2 px-[16px] py-[20px] border-[2px] border-[#D2D2D7]'}>
 								<span className={'font-medium text-[18px]'}>Classic</span>
@@ -102,8 +98,7 @@ const Subscription = () => {
 					<div className={'h-[225px] w-full'}>
 						<div className={'md:flex w-full'}>
 							<div className={'w-full md:w-1/2 border-[1px] border-[#D2D2D7]'}>
-								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt=""
-									 className={'w-full'}/>
+								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt="" className={'w-full'}/>
 							</div>
 							<div className={'w-full md:w-1/2 px-[16px] py-[20px] border-[2px] border-[#D2D2D7]'}>
 								<span className={'font-medium text-[18px]'}>Classic</span>
