@@ -37,8 +37,7 @@ const Step3 = () => {
 					<input type="text"
 						   className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
 						   placeholder={'MM / YY'}/>
-					<input type="text"
-						   className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
+					<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
 						   placeholder={'CVV Code'}/>
 				</div>
 				<button
