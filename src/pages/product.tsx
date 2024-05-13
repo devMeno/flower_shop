@@ -1,5 +1,6 @@
 import Combination from "../components/pagesComponents/product/combination.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
+import ProductPrice from "../components/globalComponents/productPrice.tsx";
 
 const Product = () => {
 	return (
@@ -52,6 +53,24 @@ const Product = () => {
 			</div>
 			<div className={'w-full py-[40px] px-[16px] text-left md:text-center md:py-[80px] font-semibold text-[34px] md:text-[50px] border-black border-[1px]'}>
 				You may also like…
+			</div>
+			<div className={'xl:flex'}>
+				<div className={'md:flex w-full xl:w-1/2'}>
+					<div className={'w-full md:w-1/2'}>
+						<ProductPrice/>
+					</div>
+					<div className={'w-full md:w-1/2'}>
+						<ProductPrice/>
+					</div>
+				</div>
+				<div className={'md:flex w-full xl:w-1/2'}>
+					<div className={'w-full md:w-1/2'}>
+						<ProductPrice/>
+					</div>
+					<div className={'w-full md:w-1/2'}>
+						<ProductPrice/>
+					</div>
+				</div>
 			</div>
 			<Footer/>
 		</div>

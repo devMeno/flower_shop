@@ -4,13 +4,16 @@ import Product from "./pages/product.tsx";
 import Subscription from "./pages/subscription.tsx";
 import AboutUs from "./pages/aboutUs.tsx";
 import Checkout from "./pages/checkout.tsx";
+import ProductPrice from "./components/globalComponents/productPrice.tsx";
+import Cart from "./components/globalComponents/cart.tsx";
+
 
 
 function App() {
 
   return (
       <>
-		  <Checkout/>
+		  <Cart/>
       </>
   )
 }
