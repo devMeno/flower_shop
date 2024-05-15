@@ -6,6 +6,8 @@ import AboutUs from "./pages/aboutUs.tsx";
 import Checkout from "./pages/checkout.tsx";
 import ProductPrice from "./components/globalComponents/productPrice.tsx";
 import Cart from "./components/globalComponents/cart.tsx";
+import Navbar from "./components/globalComponents/navbar.tsx";
+import Test from "./components/globalComponents/test.tsx";
 
 
 
@@ -13,7 +15,7 @@ function App() {
 
   return (
       <>
-		  <Cart/>
+		  <Home/>
       </>
   )
 }

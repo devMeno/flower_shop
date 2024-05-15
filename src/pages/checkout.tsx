@@ -95,9 +95,7 @@ const Checkout = () => {
 											</div>
 											<div>
 												<form action="" className={'w-full md:flex md:justify-between'}>
-													<input type="text"
-														   className={'w-full md:w-[49%] px-[10px] md:px-[24px] mb-[10px] md:mb-0 py-[16px] border-black border-[1px] font-medium text-[16px]'}
-														   placeholder={'Gift card'}/>
+													<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] mb-[10px] md:mb-0 py-[16px] border-black border-[1px] font-medium text-[16px]'} placeholder={'Gift card'}/>
 													<button
 														className={'w-full md:w-[49%] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'}>
 														APPLY

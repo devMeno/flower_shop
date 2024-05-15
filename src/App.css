@@ -3,6 +3,12 @@
     background-repeat: no-repeat;
 }
 
+.contact{
+    background-image: url("/public/images/pictures/home/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 ul{
     list-style-type: disc !important;
 }

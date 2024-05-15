@@ -1,3 +1,9 @@
+import { LuFacebook } from "react-icons/lu";
+import { FaInstagram } from "react-icons/fa";
+import { ImPinterest2 } from "react-icons/im";
+import { RxTwitterLogo } from "react-icons/rx";
+import { LiaTelegram } from "react-icons/lia";
+
 const Footer = () => {
 	return (
 		<div className={'xl:flex'}>
@@ -33,16 +39,11 @@ const Footer = () => {
 					</div>
 					<span className={'font-medium text-[18px] md:text-[21px] text-[#808080]'}>Follow Us</span>
 					<div className={'w-full flex justify-between items-center mt-[40px]'}>
-						<img src="/public/images/icons/socialMedias/pinterest.png" alt=""
-							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/Instagram.png" alt=""
-							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/facebook.png" alt=""
-							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/telegram.png" alt=""
-							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/Twitter.png" alt=""
-							 className={'w-[24px] h-[24px]'}/>
+						<ImPinterest2 className={'size-[24px]'}/>
+						<FaInstagram className={'size-[24px]'}/>
+						<LuFacebook className={'size-[24px]'}/>
+						<RxTwitterLogo className={'size-[24px]'}/>
+						<LiaTelegram className={'size-[24px]'}/>
 					</div>
 				</div>
 			</div>

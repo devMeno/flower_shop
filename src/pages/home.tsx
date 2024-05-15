@@ -1,11 +1,19 @@
+import '../App.css'
 import SectionTitle from "../components/globalComponents/sectionTitle.tsx";
 import Box from "../components/globalComponents/box.tsx";
 import Product from "../components/pagesComponents/home/product.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
+import Navbar from "../components/globalComponents/navbar.tsx";
+import {ImPinterest2} from "react-icons/im";
+import {FaInstagram} from "react-icons/fa";
+import {LuFacebook} from "react-icons/lu";
+import {RxTwitterLogo} from "react-icons/rx";
+import {LiaTelegram} from "react-icons/lia";
 
 const Home = () => {
 	return (
 		<div>
+			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 					<div className={'pb-[35px] border-b-[1px] border-black'}>
@@ -105,16 +113,16 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div className={'w-full xl:w-1/2 border-[1px] border-black xl:relative'}>
-					<img src="" alt=""/>
-					<div className={'w-full md:flex bottom-0 xl:absolute'}>
-						<div className={'w-full md:w-1/2 border-r-[1px] border-black text-left xl:text-center mb-[15px] xl:mb-0 font-medium text-[26px] md:text-[38px] pl-[16px]'}>Follow us</div>
-						<div className={'w-full md:w-1/2 px-[16px] md:px-[40px] flex justify-between items-center'}>
-							<img src="/public/images/icons/socialMedias/pinterest.png" alt="" className={'w-[24px] h-[24px]'}/>
-							<img src="/public/images/icons/socialMedias/Instagram.png" alt="" className={'w-[24px] h-[24px]'}/>
-							<img src="/public/images/icons/socialMedias/facebook.png" alt="" className={'w-[24px] h-[24px]'}/>
-							<img src="/public/images/icons/socialMedias/telegram.png" alt="" className={'w-[24px] h-[24px]'}/>
-							<img src="/public/images/icons/socialMedias/Twitter.png" alt="" className={'w-[24px] h-[24px]'}/>
+				<div className={'w-full xl:w-1/2 border-[1px] border-t-[0px] border-black contact xl:relative'}>
+
+					<div className={'w-full md:flex bottom-0 xl:absolute bg-white border-black border-t-[1px]'}>
+						<div className={'w-full md:w-1/2 border-r-[1px] border-black text-left xl:text-center pb-[15px] xl:mb-0 font-medium text-[26px] md:text-[38px] pl-[16px]'}>Follow us</div>
+						<div className={'w-full md:w-1/2 px-[16px] md:px-[40px] flex justify-between items-center py-[16px] md:py-0'}>
+							<ImPinterest2 className={'size-[24px]'}/>
+							<FaInstagram className={'size-[24px]'}/>
+							<LuFacebook className={'size-[24px]'}/>
+							<RxTwitterLogo className={'size-[24px]'}/>
+							<LiaTelegram className={'size-[24px]'}/>
 						</div>
 					</div>
 				</div>

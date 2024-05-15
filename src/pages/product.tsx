@@ -1,10 +1,12 @@
 import Combination from "../components/pagesComponents/product/combination.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
 import ProductPrice from "../components/globalComponents/productPrice.tsx";
+import Navbar from "../components/globalComponents/navbar.tsx";
 
 const Product = () => {
 	return (
 		<div>
+			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
 					<img src="/public/images/pictures/product/productPicture.png" alt="" className={'w-full'}/>
