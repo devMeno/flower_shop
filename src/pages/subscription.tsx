@@ -7,6 +7,7 @@ import Plan1 from "../../public/images/pictures/subscription/plan1.png"
 import Plan2 from "../../public/images/pictures/subscription/plan2.png"
 import Plan3 from "../../public/images/pictures/subscription/plan3.png"
 import Left from "../../public/images/pictures/subscription/left colum (1).png"
+import SubscriptionPicture from '../../public/images/pictures/subscription/subscription_image.png'
 
 
 const Subscription = () => {
@@ -15,7 +16,7 @@ const Subscription = () => {
 			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/subscription/subscription_image.png" alt="" className={'w-full'}/>
+					<img src={SubscriptionPicture} alt="" className={'w-full'}/>
 				</div>
 				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 					<div className={'text-[34px] md:text-[50px] mb-[24px]'}>Flower Subscription</div>
