@@ -1,4 +1,5 @@
 import {useNavigate} from "react-router-dom";
+import RightIcon from '../../../../public/images/icons/arrow-right.png'
 
 interface Props {
 	flex: string;
@@ -26,7 +27,7 @@ const Product = (props:Props) => {
 					<div className={'absolute bottom-[15px] w-full'}>
 						<div className={'flex w-fit mx-auto items-center'}>
 							<a href="" onClick={viewProduct}><span className={'font-semibold text-[16px]'}>Shop now</span></a>
-							<img src="/public/images/icons/arrow-right.png" alt="" className={'w-[18px] h-[12px] ml-[10px]'}/>
+							<img src={RightIcon} alt="" className={'w-[18px] h-[12px] ml-[10px]'}/>
 						</div>
 					</div>
 				</div>

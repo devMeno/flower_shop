@@ -5,6 +5,9 @@ import { Accordion, AccordionTab } from 'primereact/accordion';
 import Footer from "../components/globalComponents/footer.tsx";
 import Navbar from "../components/globalComponents/navbar.tsx";
 import {usePaymentStepState} from "../hooks/usePaymentStepState.tsx";
+import Product from '../../public/images/pictures/home/products/card item.png'
+import LockedIcon from '../../public/images/icons/locked.png'
+import ShoppingCartIcon from '../../public/images/icons/shopping_cart.png'
 
 
 const Checkout = () => {
@@ -20,7 +23,7 @@ const Checkout = () => {
 						<div className={'w-full'}>
 							<span className={'font-medium text-[14px]'}>Order summary</span>
 							<div className={'md:flex mt-[40px] pb-[24px] border-b-[1px] border-[#808080]'}>
-								<img src="/public/images/pictures/home/products/card item.png" alt="" className={'size-[160px] border-black border-[1px]'}/>
+								<img src={Product} alt="" className={'size-[160px] border-black border-[1px]'}/>
 								<div className={'flex items-center justify-between md:ml-[15px] w-full'}>
 									<div className={'mt-[16px] md:mt-0'}>
 										<span className={'font-medium text-[18px]'}>Snowfall</span><br/>
@@ -58,7 +61,7 @@ const Checkout = () => {
 						</div>
 						<div className={'absolute bottom-0 w-full'}>
 							<div className={'mx-auto w-fit flex'}>Secure Checkout <img
-								src="/public/images/icons/locked.png" alt="" className={'size-[22px] ml-[5px]'}/></div>
+								src={LockedIcon} alt="" className={'size-[22px] ml-[5px]'}/></div>
 						</div>
 					</div>
 				</div>
@@ -70,7 +73,7 @@ const Checkout = () => {
 								header={
 									<span className="flex align-items-center gap-2 w-full">
 									<div className={'flex items-center'}><img
-										src="/public/images/icons/shopping_cart.png" alt=""
+										src={ShoppingCartIcon} alt=""
 										className={'size-[24px] mx-[5px]'}/><span
 										className="font-medium text-[18px] white-space-nowrap">Show order summary</span></div>
 										<span className="ml-auto">$100</span>
@@ -83,8 +86,7 @@ const Checkout = () => {
 										<div className={'w-full'}>
 											<span className={'font-medium text-[14px]'}>Order summary</span>
 											<div className={'md:flex mt-[24px] pb-[24px] border-b-[1px] border-[#808080]'}>
-												<img src="/public/images/pictures/home/products/card item.png" alt=""
-													 className={'size-[160px] border-black border-[1px]'}/>
+												<img src={Product} alt="" className={'size-[160px] border-black border-[1px]'}/>
 												<div className={'flex items-center justify-between md:ml-[15px] w-full'}>
 													<div className={'mt-[16px] md:mt-0'}>
 														<span className={'font-medium text-[18px]'}>Snowfall</span><br/>
@@ -124,7 +126,7 @@ const Checkout = () => {
 								</div>
 									<div className={'mt-[24px] w-full'}>
 										<div className={'mx-auto w-fit flex'}>Secure Checkout <img
-											src="/public/images/icons/locked.png" alt=""
+											src={LockedIcon} alt=""
 											className={'size-[22px] ml-[5px]'}/></div>
 									</div>
 								</div>

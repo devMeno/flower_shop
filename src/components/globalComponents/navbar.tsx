@@ -9,6 +9,7 @@ import {LuFacebook} from "react-icons/lu";
 import {RxTwitterLogo} from "react-icons/rx";
 import {LiaTelegram} from "react-icons/lia";
 import {useNavigate} from "react-router-dom";
+import Product from '../../../public/images/pictures/home/products/card item.png'
 
 const Navbar = () => {
 
@@ -63,7 +64,7 @@ const Navbar = () => {
 
 												<div
 													className={'md:flex border-[1px] border-black py-[24px] px-[16px] md:p-[40px]'}>
-													<img src="/public/images/pictures/home/products/card item.png" alt="" className={'size-[160px] border-black border-[1px]'}/>
+													<img src={Product} alt="" className={'size-[160px] border-black border-[1px]'}/>
 													<div
 														className={'flex items-center justify-between md:ml-[15px] w-full'}>
 														<div className={'mt-[16px] md:mt-0'}>

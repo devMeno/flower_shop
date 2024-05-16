@@ -1,4 +1,9 @@
 import { IoClose } from "react-icons/io5";
+import Facebook from '../../../public/images/icons/socialMedias/facebook.png'
+import Pinterest from '../../../public/images/icons/socialMedias/pinterest.png'
+import Instagram from '../../../public/images/icons/socialMedias/instagram.png'
+import Twitter from '../../../public/images/icons/socialMedias/twitter.png'
+import Telegram from '../../../public/images/icons/socialMedias/telegram.png'
 
 const Cart = () => {
 	return (
@@ -18,15 +23,15 @@ const Cart = () => {
 				</div>
 				<div className={'border-black border-[1px]'}>
 					<div className={'w-full flex justify-between items-center p-[24px]'}>
-						<img src="/public/images/icons/socialMedias/pinterest.png" alt=""
+						<img src={Pinterest} alt=""
 							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/Instagram.png" alt=""
+						<img src={Instagram} alt=""
 							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/facebook.png" alt=""
+						<img src={Facebook} alt=""
 							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/telegram.png" alt=""
+						<img src={Telegram} alt=""
 							 className={'w-[24px] h-[24px]'}/>
-						<img src="/public/images/icons/socialMedias/Twitter.png" alt=""
+						<img src={Twitter} alt=""
 							 className={'w-[24px] h-[24px]'}/>
 					</div>
 				</div>

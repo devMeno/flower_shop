@@ -1,5 +1,14 @@
 import Navbar from "../components/globalComponents/navbar.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
+import Facebook from '../../public/images/pictures/aboutUs/socialMedia/Link_Facebook.png'
+import Pinterest from '../../public/images/pictures/aboutUs/socialMedia/Link_Pinterest.png'
+import Telegram from '../../public/images/pictures/aboutUs/socialMedia/Link_Telegram.png'
+import Twitter from '../../public/images/pictures/aboutUs/socialMedia/Link_Twitter.png'
+import Instagram from '../../public/images/pictures/aboutUs/socialMedia/Link_Insta.png'
+import Subscription from '../../public/images/pictures/subscription/subscription_image.png'
+import Left1 from '../../public/images/pictures/aboutUs/grid_colum_left1.png'
+import Right from '../../public/images/pictures/aboutUs/grid_colum_Right.png'
+import Left2 from '../../public/images/pictures/aboutUs/grid_colum_left2.png'
 
 const AboutUs = () => {
 	return (
@@ -19,21 +28,21 @@ const AboutUs = () => {
 								className={'font-semibold'}>Online Flower Delivery Service</span></p>
 						</div>
 						<div className={'w-[343px] md:w-[368px] px-[15px] md:px-0 mx-auto flex justify-between'}>
-							<img src="/public/images/pictures/aboutUs/socialMedia/Link_Facebook.png" alt=""
+							<img src={Facebook} alt=""
 								 className={'size-[48px]'}/>
-							<img src="/public/images/pictures/aboutUs/socialMedia/Link_Pinterest.png" alt=""
+							<img src={Pinterest} alt=""
 								 className={'size-[48px]'}/>
-							<img src="/public/images/pictures/aboutUs/socialMedia/Link_Insta.png" alt=""
+							<img src={Instagram} alt=""
 								 className={'size-[48px]'}/>
-							<img src="/public/images/pictures/aboutUs/socialMedia/Link_Twitter.png" alt=""
+							<img src={Twitter} alt=""
 								 className={'size-[48px]'}/>
-							<img src="/public/images/pictures/aboutUs/socialMedia/Link_Telegram.png" alt=""
+							<img src={Telegram} alt=""
 								 className={'size-[48px]'}/>
 						</div>
 					</div>
 				</div>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/subscription/subscription_image.png" alt="" className={'w-full'}/>
+					<img src={Subscription} alt="" className={'w-full'}/>
 				</div>
 			</div>
 			<div className={'w-full py-[40px] px-[16px] text-center md:py-[80px]'}>
@@ -47,7 +56,7 @@ const AboutUs = () => {
 			</div>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/aboutUs/grid_colum_left1.png" alt="" className={'w-full'}/>
+					<img src={Left1} alt="" className={'w-full'}/>
 				</div>
 				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 					<span className={'font-semibold text-[26px] md:text-[38px]'}>Expertly Crafted Bouquets</span>
@@ -59,7 +68,7 @@ const AboutUs = () => {
 			</div>
 			<div className={'xl:flex xl:flex-row-reverse'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/aboutUs/grid_colum_Right.png" alt="" className={'w-full'}/>
+					<img src={Right} alt="" className={'w-full'}/>
 				</div>
 				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 					<span className={'font-semibold text-[26px] md:text-[38px]'}>Bouquets, Gifts & Ambiance</span>
@@ -71,7 +80,7 @@ const AboutUs = () => {
 			</div>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/aboutUs/grid_colum_left2.png" alt="" className={'w-full'}/>
+					<img src={Left2} alt="" className={'w-full'}/>
 				</div>
 				<div
 					className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>

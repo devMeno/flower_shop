@@ -6,6 +6,7 @@ import Proposition1 from "../../public/images/pictures/product/propositions/prop
 import Proposition2 from "../../public/images/pictures/product/propositions/proposition2.png"
 import Proposition3 from "../../public/images/pictures/product/propositions/proposition3.png"
 import Proposition4 from "../../public/images/pictures/product/propositions/proposition4.png"
+import ProductPicture from '../../public/images/pictures/product/productPicture.png'
 
 const Product = () => {
 	return (
@@ -13,7 +14,7 @@ const Product = () => {
 			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/product/productPicture.png" alt="" className={'w-full'}/>
+					<img src={ProductPicture} alt="" className={'w-full'}/>
 				</div>
 				<div className={'xl:w-1/2 py-[40px] px-[16px] md:p-[40px] border-[1px] border-black'}>
 					<div className={'mb-[22px]'}><span

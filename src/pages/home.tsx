@@ -15,6 +15,11 @@ import ProductImage3 from '../../public/images/pictures/home/products/product3.p
 import ProductImage4 from '../../public/images/pictures/home/products/product4.png'
 import ProductImage5 from '../../public/images/pictures/home/products/product5.png'
 import {useNavigate} from "react-router-dom";
+import Hero from '../../public/images/pictures/home/img hero.png'
+import CallIcon from '../../public/images/icons/call.png'
+import VectorIcon from '../../public/images/icons/vector.png'
+import Image from '../../public/images/pictures/home/image.png'
+
 
 const Home = () => {
 	const navigate = useNavigate();
@@ -34,7 +39,7 @@ const Home = () => {
 					</div>
 					<div className={'mt-[24px] flex'}>
 						<div className={'w-1/2 border-r-[1px] border-black'}>
-							<img src="/public/images/pictures/home/img%20hero.png" alt="" className={'w-[155.5px] h-[180px] md:w-[95%] md:h-[256px] xl:size-[256px]'}/>
+							<img src={Hero} alt="" className={'w-[155.5px] h-[180px] md:w-[95%] md:h-[256px] xl:size-[256px]'}/>
 						</div>
 						<div className={'w-1/2 border-l-[1px] border-black relative'}>
 							<p className={'absolute bottom-0 ml-[16px] md:ml-[24px] text-[11px] md:text-[14px]'}>
@@ -98,11 +103,11 @@ const Home = () => {
 							</div>
 							<div className={'h-[144px] md:h-[282px] text-center content-center'}>
 								<div className={'flex mx-auto w-fit mb-[15px]'}>
-									<img src="/public/images/icons/call.png" alt="call icon"/>
+									<img src={CallIcon} alt="call icon"/>
 									<span className={'text-[16px] font-semibold'}>+380980099777</span>
 								</div>
 								<div className={'flex mx-auto w-fit'}>
-									<img src="/public/images/icons/call.png" alt="call icon"/>
+									<img src={CallIcon} alt="call icon"/>
 									<span className={'text-[16px] font-semibold'}>+380980099777</span>
 								</div>
 							</div>
@@ -118,7 +123,7 @@ const Home = () => {
 									<span className={'text-[16px] font-semibold'}>opening hours: 8 to 11 p.m.</span>
 								</div>
 								<div className={'flex mx-auto w-fit'}>
-									<img src="/public/images/icons/Vector.png" alt="vector icon"/>
+									<img src={VectorIcon} alt="vector icon"/>
 									<span className={'text-[16px] font-semibold'}>15/4 Khreshchatyk Street, Kyiv </span>
 								</div>
 							</div>
@@ -142,7 +147,7 @@ const Home = () => {
 			<div className={'w-full py-[40px] px-[16px] text-left md:text-center md:py-[80px] font-semibold text-[34px] md:text-[50px]'}>Our Service</div>
 			<div className={'xl:flex xl:h-[720px]'}>
 				<div className={'w-full xl:w-1/2'}>
-					<img src="/public/images/pictures/home/image.png" alt="" className={'xl:w-full xl:h-[720px]'}/>
+					<img src={Image} alt="" className={'xl:w-full xl:h-[720px]'}/>
 				</div>
 				<div className={'w-full xl:border-black xl:border-t-[1px] border-b-[1px] xl:w-1/2 text-center flex items-center px-[16px] py-[40px] md:p-[80px]'}>
 					<div>

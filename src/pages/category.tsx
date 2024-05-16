@@ -12,6 +12,7 @@ import Category7 from "../../public/images/pictures/category/products/category7.
 import Category8 from "../../public/images/pictures/category/products/category8.png"
 import Category9 from "../../public/images/pictures/category/products/category9.png"
 import Category10 from "../../public/images/pictures/category/products/category10.png"
+import LeftColumn from '../../public/images/pictures/category/left colum.png'
 
 const Category = () => {
 	return (
@@ -19,7 +20,7 @@ const Category = () => {
 			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/category/left colum.png" alt="" className={'w-full'}/>
+					<img src={LeftColumn} alt="" className={'w-full'}/>
 				</div>
 				<div className={'xl:w-1/2'}>
 					<div className={'w-full xl:flex'}>
