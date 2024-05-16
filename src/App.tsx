@@ -8,15 +8,24 @@ import ProductPrice from "./components/globalComponents/productPrice.tsx";
 import Cart from "./components/globalComponents/cart.tsx";
 import Navbar from "./components/globalComponents/navbar.tsx";
 import Test from "./components/globalComponents/test.tsx";
+import {Routes,Route} from "react-router-dom";
+
+
+import {PaymentStepProvider} from "./contexts/paymentStep.tsx";
 
 
 
 function App() {
 
   return (
-      <>
-		  <AboutUs/>
-      </>
+	  <Routes>
+		  <Route path='/' Component={Home}/>
+		  <Route path='/category' Component={Category}/>
+		  <Route path='/product' Component={Product}/>
+		  <Route path='/subscription' Component={Subscription}/>
+		  <Route path='/aboutUs'  Component={AboutUs}/>
+		  <Route path='/checkout' Component={Checkout}/>
+	  </Routes>
   )
 }
 

@@ -1,3 +1,5 @@
+import {useNavigate} from "react-router-dom";
+
 interface Props {
 	flex: string;
 	image: string;
@@ -5,6 +7,12 @@ interface Props {
 
 const Product = (props:Props) => {
 	const {flex, image} = props;
+	const navigate = useNavigate();
+
+	const viewProduct = ()=>{
+		navigate('/product');
+	}
+
 	return (
 		<div className={flex}>
 			<div className={'w-1/2 border-black border-[1px]'}>
@@ -17,7 +25,7 @@ const Product = (props:Props) => {
 				<div className={'h-1/4 relative'}>
 					<div className={'absolute bottom-[15px] w-full'}>
 						<div className={'flex w-fit mx-auto items-center'}>
-							<span className={'font-semibold text-[16px]'}>Shop now</span>
+							<a href="" onClick={viewProduct}><span className={'font-semibold text-[16px]'}>Shop now</span></a>
 							<img src="/public/images/icons/arrow-right.png" alt="" className={'w-[18px] h-[12px] ml-[10px]'}/>
 						</div>
 					</div>

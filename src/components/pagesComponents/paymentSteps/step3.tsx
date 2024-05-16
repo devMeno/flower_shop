@@ -1,8 +1,20 @@
 import { PiCaretRight } from "react-icons/pi";
 import { PiCheck } from "react-icons/pi";
 import { RxPencil2 } from "react-icons/rx";
+import {usePaymentStepState} from "../../../hooks/usePaymentStepState.tsx";
 
 const Step3 = () => {
+
+	const {setPaymentSteps} = usePaymentStepState();
+
+	const handleReturnToStep1 = ()=>{
+		setPaymentSteps("step1")
+	}
+
+	const handleReturnToStep2 = ()=>{
+		setPaymentSteps("step2")
+	}
+
 	return (
 		<div className={'w-full'}>
 			<div className="flex mb-[32px] md:mb-[40px]">
@@ -18,14 +30,14 @@ const Step3 = () => {
 					<PiCheck className={'size-[24px] mr-[5px]'}/>
 					<span className={'text-[18px] font-medium'}>Contact information</span>
 				</div>
-				<button className={'-mt-[20px]'}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
+				<button className={'-mt-[20px]'} onClick={handleReturnToStep1}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
 			</div>
 			<div className={'flex border-black border-b-[1px] pb-[24px] relative'}>
 				<div className={'flex'}>
 					<PiCheck className={'size-[24px] mr-[5px]'}/>
 					<span className={'text-[18px] font-medium'}>Shipping details</span>
 				</div>
-				<button className={'-mt-[20px]'}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
+				<button className={'-mt-[20px]'} onClick={handleReturnToStep2}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
 			</div>
 			<div className={'my-[16px] text-[18px] font-medium'}>3 Payment</div>
 			<div className={'my-[16px] text-[16px] font-medium'}>Pay by card. Your payment is secure.</div>

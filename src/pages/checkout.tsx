@@ -4,23 +4,16 @@ import Step3 from "../components/pagesComponents/paymentSteps/step3.tsx";
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import Footer from "../components/globalComponents/footer.tsx";
 import Navbar from "../components/globalComponents/navbar.tsx";
-import {useState} from "react";
+import {usePaymentStepState} from "../hooks/usePaymentStepState.tsx";
 
 
 const Checkout = () => {
-	const [step, setStep] = useState("step1");
 
-	const goToStep1 = () => {
-		setStep("step1");
-	}
-	const goToStep2 = () => {
-		setStep("step2");
-	}
-	const goToStep3 = () => {
-		setStep("step3");
-	}
+	const {paymentSteps} = usePaymentStepState();
+
 	return (
 		<div>
+			<Navbar/>
 			<div className={'xl:flex xl:flex-row-reverse'}>
 				<div className={'hidden xl:block xl:w-1/2 border-[1px] border-black py-[40px] px-[16px] md:py-[40px] md:px-[80px] bg-[#F5F5F7]'}>
 					<div className="relative h-full">
@@ -72,7 +65,7 @@ const Checkout = () => {
 
 				<div className={'block xl:hidden xl:w-1/2 border-[1px] border-black py-[40px] px-[16px] md:py-[40px] md:px-[80px] bg-[#F5F5F7]'}>
 					<div className="card">
-						<Accordion activeIndex={0}>
+						<Accordion activeIndex={1}>
 							<AccordionTab
 								header={
 									<span className="flex align-items-center gap-2 w-full">
@@ -141,7 +134,9 @@ const Checkout = () => {
 				</div>
 
 				<div className={'xl:w-1/2 border-[1px] border-black py-[40px] px-[16px] md:py-[40px] md:px-[80px]'}>
-					<Step3/>
+					{paymentSteps === "step1" ? <Step1/> : null}
+					{paymentSteps === "step2" ? <Step2/> : null}
+					{paymentSteps === "step3" ? <Step3/> : null}
 				</div>
 			</div>
 

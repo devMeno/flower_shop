@@ -1,8 +1,21 @@
 import { PiCaretRight } from "react-icons/pi";
 import { PiCheck } from "react-icons/pi";
 import { RxPencil2 } from "react-icons/rx";
+import {usePaymentStepState} from "../../../hooks/usePaymentStepState.tsx";
 
 const Step2 = () => {
+
+	const {setPaymentSteps} = usePaymentStepState();
+
+
+	const handleGoToStep3 = ()=>{
+		setPaymentSteps("step3")
+	}
+
+	const handleReturnToStep1 = ()=>{
+		setPaymentSteps("step1")
+	}
+
 	return (
 		<div className={'w-full'}>
 			<div className="flex mb-[32px] md:mb-[40px]">
@@ -18,7 +31,7 @@ const Step2 = () => {
 					<PiCheck className={'size-[24px] mr-[5px]'}/>
 					<span className={'text-[18px] font-medium'}>Contact information</span>
 				</div>
-				<button className={'-mt-[20px]'}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
+				<button className={'-mt-[20px]'} onClick={handleReturnToStep1}><RxPencil2 className={'size-[24px] absolute right-0'}/></button>
 			</div>
 			<div className={'my-[16px] text-[18px] font-medium'}>1 Contact information</div>
 			<form action="" className={'mb-[24px]'}>
@@ -46,8 +59,8 @@ const Step2 = () => {
 					<input type="checkbox" id={'check'} className={'mr-[5px] size-[24px]'}/>
 					<label htmlFor={'check'} className={'font-medium text-[14px]'} >I don't know the address, please call the recipient.</label>
 				</div>
-				<button
-					className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white mt-[5px]'}>
+				<button className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white mt-[5px]'}
+				onClick={handleGoToStep3}>
 					Continue to Payment
 				</button>
 			</form>

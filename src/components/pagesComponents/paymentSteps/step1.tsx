@@ -1,6 +1,14 @@
 import { PiCaretRight } from "react-icons/pi";
+import {usePaymentStepState} from "../../../hooks/usePaymentStepState.tsx";
 
 const Step1 = () => {
+
+	const {setPaymentSteps} = usePaymentStepState();
+
+	const handleGoToStep2 = ()=>{
+		setPaymentSteps("step2");
+	}
+
 	return (
 		<div className={'w-full'}>
 			<div className="flex mb-[32px] md:mb-[40px]">
@@ -25,8 +33,8 @@ const Step1 = () => {
 				<input type="text"
 					   className={'w-full px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
 					   placeholder={'Your phone number'}/>
-				<button
-					className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white mt-[5px]'}>
+				<button className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white mt-[5px]'}
+				onClick={handleGoToStep2}>
 					Continue to shipping
 				</button>
 			</form>
