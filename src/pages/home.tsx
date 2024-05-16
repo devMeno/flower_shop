@@ -17,7 +17,7 @@ import ProductImage5 from '../../public/images/pictures/home/products/product5.p
 import {useNavigate} from "react-router-dom";
 import Hero from '../../public/images/pictures/home/img hero.png'
 import CallIcon from '../../public/images/icons/call.png'
-import VectorIcon from '../../public/images/icons/vector.png'
+import VectorIcon from '../../public/images/icons/Vector.png'
 import Image from '../../public/images/pictures/home/image.png'
 
 
