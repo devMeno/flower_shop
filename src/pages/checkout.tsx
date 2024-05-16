@@ -3,9 +3,22 @@ import Step2 from "../components/pagesComponents/paymentSteps/step2.tsx";
 import Step3 from "../components/pagesComponents/paymentSteps/step3.tsx";
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import Footer from "../components/globalComponents/footer.tsx";
+import Navbar from "../components/globalComponents/navbar.tsx";
+import {useState} from "react";
 
 
 const Checkout = () => {
+	const [step, setStep] = useState("step1");
+
+	const goToStep1 = () => {
+		setStep("step1");
+	}
+	const goToStep2 = () => {
+		setStep("step2");
+	}
+	const goToStep3 = () => {
+		setStep("step3");
+	}
 	return (
 		<div>
 			<div className={'xl:flex xl:flex-row-reverse'}>
@@ -14,8 +27,7 @@ const Checkout = () => {
 						<div className={'w-full'}>
 							<span className={'font-medium text-[14px]'}>Order summary</span>
 							<div className={'md:flex mt-[40px] pb-[24px] border-b-[1px] border-[#808080]'}>
-								<img src="/public/images/pictures/home/products/card item.png" alt=""
-									 className={'size-[160px] border-black border-[1px]'}/>
+								<img src="/public/images/pictures/home/products/card item.png" alt="" className={'size-[160px] border-black border-[1px]'}/>
 								<div className={'flex items-center justify-between md:ml-[15px] w-full'}>
 									<div className={'mt-[16px] md:mt-0'}>
 										<span className={'font-medium text-[18px]'}>Snowfall</span><br/>
@@ -28,9 +40,7 @@ const Checkout = () => {
 							</div>
 							<div>
 								<form action="" className={'w-full md:flex md:justify-between'}>
-									<input type="text"
-										   className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px]'}
-										   placeholder={'Gift card'}/>
+									<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px]'} placeholder={'Gift card'}/>
 									<button
 										className={'w-full md:w-[49%] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'}>
 										APPLY

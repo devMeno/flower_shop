@@ -1,12 +1,17 @@
-import cardItem from "../../../public/images/pictures/product/card_item.png"
+interface Props {
+	name: string;
+	price: number;
+	image: string;
+}
 
-const ProductPrice = () => {
+const ProductPrice = (props:Props) => {
+	const {name, price,image} = props
 	return (
-		<div className={'w-full relative h-[360px] border-black border-[1px] border-l-[0px]'} style={{backgroundImage:`url(${cardItem})`, backgroundSize:'cover'}}>
+		<div className={'w-full relative h-[360px] border-black border-[1px] border-l-[0px]'} style={{backgroundImage:`url(${image})`, backgroundSize:'cover'}}>
 			<div className={'absolute bottom-[16px] text-center w-full'}>
 				<div className={'w-fit mx-auto'}>
-					<div className={'font-medium'}>Rattan Grapefruit</div>
-					<div className={'text-[#808080]'}>price 48$</div>
+					<div className={'font-medium'}>{name}</div>
+					<div className={'text-[#808080]'}>price {price}$</div>
 				</div>
 			</div>
 		</div>

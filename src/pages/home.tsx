@@ -9,6 +9,11 @@ import {FaInstagram} from "react-icons/fa";
 import {LuFacebook} from "react-icons/lu";
 import {RxTwitterLogo} from "react-icons/rx";
 import {LiaTelegram} from "react-icons/lia";
+import ProductImage1 from '../../public/images/pictures/home/products/card item.png'
+import ProductImage2 from '../../public/images/pictures/home/products/product2.png'
+import ProductImage3 from '../../public/images/pictures/home/products/product3.png'
+import ProductImage4 from '../../public/images/pictures/home/products/product4.png'
+import ProductImage5 from '../../public/images/pictures/home/products/product5.png'
 
 const Home = () => {
 	return (
@@ -32,11 +37,11 @@ const Home = () => {
 					</div>
 				</div>
 				<div className={'xl:w-1/2'}>
-					<Product/>
-					<Product/>
-					<Product/>
-					<Product/>
-					<Product/>
+					<Product flex={'flex'} image={ProductImage1}/>
+					<Product flex={'flex flex-row-reverse'} image={ProductImage2}/>
+					<Product flex={'flex'} image={ProductImage3}/>
+					<Product flex={'flex flex-row-reverse'} image={ProductImage4}/>
+					<Product flex={'flex'} image={ProductImage5}/>
 				</div>
 			</div>
 			<div className={'w-full xl:flex'}>

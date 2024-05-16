@@ -1,10 +1,12 @@
 .category{
     background-image: url("/public/images/pictures/category/left colum.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .contact{
-    background-image: url("/public/images/pictures/home/image.png");
+    background-image: url("/public/images/pictures/home/shopImage.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

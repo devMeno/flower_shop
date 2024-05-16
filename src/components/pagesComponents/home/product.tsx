@@ -1,7 +1,12 @@
+interface Props {
+	flex: string;
+	image: string;
+}
 
-const Product = () => {
+const Product = (props:Props) => {
+	const {flex, image} = props;
 	return (
-		<div className={'flex'}>
+		<div className={flex}>
 			<div className={'w-1/2 border-black border-[1px]'}>
 				<div className={'h-1/4'}></div>
 				<div className={'flex items-center h-2/4'}>
@@ -19,7 +24,7 @@ const Product = () => {
 				</div>
 			</div>
 			<div className={'w-1/2 border-black border-[1px]'}>
-				<img src="/public/images/pictures/home/products/card item.png" alt="" className={'size-full'}/>
+				<img src={image} alt="" className={'size-full'}/>
 			</div>
 		</div>
 	);

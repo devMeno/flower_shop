@@ -1,11 +1,18 @@
 import "../App.css"
+import Navbar from "../components/globalComponents/navbar.tsx";
+import Footer from "../components/globalComponents/footer.tsx";
 import SectionTitle from "../components/globalComponents/sectionTitle.tsx";
 import Box from "../components/globalComponents/box.tsx";
+import Plan1 from "../../public/images/pictures/subscription/plan1.png"
+import Plan2 from "../../public/images/pictures/subscription/plan2.png"
+import Plan3 from "../../public/images/pictures/subscription/plan3.png"
+import Left from "../../public/images/pictures/subscription/left colum (1).png"
 
 
 const Subscription = () => {
 	return (
 		<div>
+			<Navbar/>
 			<div className={'xl:flex'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
 					<img src="/public/images/pictures/subscription/subscription_image.png" alt="" className={'w-full'}/>
@@ -63,9 +70,10 @@ const Subscription = () => {
 			</div>
 			<div className={'xl:flex xl:flex-row-reverse'}>
 				<div className={'xl:w-1/2 border-[1px] border-black'}>
-					<img src="/public/images/pictures/subscription/subscription_image.png" alt="" className={'w-full'}/>
+					<img src={Left} alt="" className={'w-full'}/>
 				</div>
-				<div className={'xl:w-1/2 py-[40px] px-[16px] md:py-[80px] md:px-[40px] border-black border-[3px] bg-red-500'}>
+				<div
+					className={'xl:w-1/2 py-[40px] px-[16px] md:py-[80px] md:px-[40px] border-black border-[1px]'}>
 					<span className={'font-medium text-[14px]'}>Build Your Subscription</span>
 					<div className={'my-[24px]'}>
 						<span className={'font-medium text-[38px]'}>Selecting a Plan</span>
@@ -74,10 +82,10 @@ const Subscription = () => {
 							modify, pause, or cancel your subscription, simply log in to your account dashboard. You're
 							in complete control of your flower delivery experience.</p>
 					</div>
-					<div className={'w-full'}>
+					<div className={'w-full mb-[16px]'}>
 						<div className={'md:flex w-full'}>
 							<div className={'w-full md:w-1/2 border-[1px] border-[#D2D2D7]'}>
-								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt="" className={'w-full'}/>
+								<img src={Plan1} alt="" className={'w-full'}/>
 							</div>
 							<div className={'w-full md:w-1/2 px-[16px] py-[20px] border-[2px] border-[#D2D2D7]'}>
 								<span className={'font-medium text-[18px]'}>Classic</span>
@@ -95,10 +103,10 @@ const Subscription = () => {
 							SELECT
 						</button>
 					</div>
-					<div className={'h-[225px] w-full'}>
+					<div className={'w-full mb-[16px]'}>
 						<div className={'md:flex w-full'}>
 							<div className={'w-full md:w-1/2 border-[1px] border-[#D2D2D7]'}>
-								<img src="/public/images/pictures/subscription/Image_bouquet.png" alt="" className={'w-full'}/>
+								<img src={Plan2} alt="" className={'w-full'}/>
 							</div>
 							<div className={'w-full md:w-1/2 px-[16px] py-[20px] border-[2px] border-[#D2D2D7]'}>
 								<span className={'font-medium text-[18px]'}>Classic</span>
@@ -116,8 +124,64 @@ const Subscription = () => {
 							SELECT
 						</button>
 					</div>
+					<div className={'w-full mb-[40px]'}>
+						<div className={'md:flex w-full'}>
+							<div className={'w-full md:w-1/2 border-[1px] border-[#D2D2D7]'}>
+								<img src={Plan3} alt="" className={'w-full'}/>
+							</div>
+							<div className={'w-full md:w-1/2 px-[16px] py-[20px] border-[2px] border-[#D2D2D7]'}>
+								<span className={'font-medium text-[18px]'}>Classic</span>
+								<ul className={'ml-[25px] mt-[24px]'}>
+									<li>Price $45</li>
+									<li>Free Delivery</li>
+									<li>Best for a budget</li>
+									<li>Glass vase with first delivery</li>
+									<li>Save up to 25%</li>
+								</ul>
+							</div>
+						</div>
+						<button
+							className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'}>
+							SELECT
+						</button>
+					</div>
+					<hr/>
+					<div className={'my-[40px]'}>
+						<span className={'text-[28px]'}>How often do you want flowers delivered ?</span><br/>
+						<span>Select the delivery frequency</span>
+						<div className={'w-full md:flex md:justify-between md:gap-[15px] mt-[24px]'}>
+							<button
+								className={'w-full mb-[10px] md:mb-0 md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'}>MONDAY
+							</button>
+							<button
+								className={'w-full mb-[10px] md:mb-0 md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'}>BI-WEEKLY
+							</button>
+							<button
+								className={'w-full mb-[10px] md:mb-0 md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'}>WEEKLY
+							</button>
+						</div>
+					</div>
+					<hr/>
+					<div className={'my-[40px]'}>
+						<span className={'text-[28px]'}>How many deliveries would you like ?</span><br/>
+						<span>Pay once and do not worry about flowers, our bouquets will be beautiful and on time, as many times as you need </span>
+						<div className={'flex border-black border-[1px] h-[44px] w-fit mt-[24px]'}>
+							<button className={'size-[44px] border-r-[1px] border-black text-center flex items-center'}>
+								<span className={'text-[24px] mx-auto'}>-</span></button>
+							<div className={'border-r-[1px] border-black w-[58px] text-center flex items-center'}><span
+								className={'text-[18px] mx-auto'}>1</span></div>
+							<button className={'size-[44px] text-center flex items-center'}><span
+								className={'text-[24px] mx-auto'}>+</span></button>
+						</div>
+					</div>
+					<hr/>
+					<button
+						className={'w-full mt-[40px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'}>
+						CHECKOUT
+					</button>
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };

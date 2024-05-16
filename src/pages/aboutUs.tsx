@@ -1,8 +1,10 @@
+import Navbar from "../components/globalComponents/navbar.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
 
 const AboutUs = () => {
 	return (
 		<div>
+			<Navbar/>
 			<div className={'xl:flex'}>
 				<div
 					className={'xl:w-1/2 py-[40px] px-[16px] md:p-[80px] border-[1px] border-black flex items-center justify-center'}>

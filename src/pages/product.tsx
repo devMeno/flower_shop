@@ -2,6 +2,10 @@ import Combination from "../components/pagesComponents/product/combination.tsx";
 import Footer from "../components/globalComponents/footer.tsx";
 import ProductPrice from "../components/globalComponents/productPrice.tsx";
 import Navbar from "../components/globalComponents/navbar.tsx";
+import Proposition1 from "../../public/images/pictures/product/propositions/proposition1.png"
+import Proposition2 from "../../public/images/pictures/product/propositions/proposition2.png"
+import Proposition3 from "../../public/images/pictures/product/propositions/proposition3.png"
+import Proposition4 from "../../public/images/pictures/product/propositions/proposition4.png"
 
 const Product = () => {
 	return (
@@ -59,18 +63,18 @@ const Product = () => {
 			<div className={'xl:flex'}>
 				<div className={'md:flex w-full xl:w-1/2'}>
 					<div className={'w-full md:w-1/2'}>
-						<ProductPrice/>
+						<ProductPrice name={'Autumn Symphony'} price={70} image={Proposition1}/>
 					</div>
 					<div className={'w-full md:w-1/2'}>
-						<ProductPrice/>
+						<ProductPrice name={'Autumn Symphony'} price={70} image={Proposition2}/>
 					</div>
 				</div>
 				<div className={'md:flex w-full xl:w-1/2'}>
 					<div className={'w-full md:w-1/2'}>
-						<ProductPrice/>
+						<ProductPrice name={'Autumn Symphony'} price={70} image={Proposition3}/>
 					</div>
 					<div className={'w-full md:w-1/2'}>
-						<ProductPrice/>
+						<ProductPrice name={'Autumn Symphony'} price={70} image={Proposition4}/>
 					</div>
 				</div>
 			</div>
