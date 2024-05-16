@@ -8,11 +8,13 @@ import {FaInstagram} from "react-icons/fa";
 import {LuFacebook} from "react-icons/lu";
 import {RxTwitterLogo} from "react-icons/rx";
 import {LiaTelegram} from "react-icons/lia";
+import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
 
 	const [open1, setOpen1] = useState(false)
 	const [open2, setOpen2] = useState(false)
+	const navigate = useNavigate();
 
 	const handleCart = () => {
 		setOpen1(open1 === false ? true : false)
@@ -20,6 +22,14 @@ const Navbar = () => {
 
 	const handleMenu = () => {
 		setOpen2(open2 === false ? true : false)
+	}
+
+	const handleGoToHome = ()=>{
+		navigate('/')
+	}
+
+	const handleGoToCheckOut = ()=>{
+		navigate('/checkout')
 	}
 
 	return (
@@ -79,8 +89,7 @@ const Navbar = () => {
 												</div>
 
 												<div className={'absolute bottom-0 bg-red-500 w-full'}>
-													<button
-														className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'}>
+													<button className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white'} onClick={handleGoToCheckOut}>
 														CHECK OUT
 													</button>
 												</div>
@@ -117,7 +126,7 @@ const Navbar = () => {
 													className={'py-[8px] px-[14px] md:py-[12px] md:px-[16px] border-black border-[1px]'}>
 													<IoClose className={'size-[24px]'} onClick={() => setOpen2(false)}/></div>
 												<div className={'p-[24px] border-black border-[1px]'}>Sign in</div>
-												<div className={'p-[24px] border-black border-[1px]'}>Shop</div>
+												<div className={'p-[24px] border-black border-[1px]'}><a href="" onClick={handleGoToHome}>Shop</a></div>
 												<div className={'p-[24px] border-black border-[1px]'}>Service</div>
 												<div className={'p-[24px] border-black border-[1px]'}>Contact</div>
 												<div className={'p-[24px] border-black border-[1px]'}>About us</div>
@@ -150,7 +159,7 @@ const Navbar = () => {
 				<IoMenuSharp className={'size-[24px] mx-auto'}/></button>
 			<div className={'hidden xl:block w-1/4'}>
 				<div className={' w-full flex font-medium'}>
-					<button className={'w-1/2 border-[1px] border-black py-[32px]'}>Shop</button>
+					<button className={'w-1/2 border-[1px] border-black py-[32px]'} onClick={handleGoToHome}>Shop</button>
 					<button className={'w-1/2 border-[1px] border-black py-[32px]'}>Contact</button>
 				</div>
 			</div>

@@ -1,3 +1,5 @@
+import {useNavigate} from "react-router-dom";
+
 interface Props {
 	title: string;
 	text: string;
@@ -7,6 +9,16 @@ interface Props {
 
 const Box = (props:Props) => {
 	const {title, text,buttonText,preText} = props
+	const navigate = useNavigate();
+
+	const handleGoToAboutUs = ()=>{
+		navigate('/aboutUs');
+	}
+
+	const handleStayAtHome = ()=>{
+		navigate('/');
+	}
+
 	return (
 			<div className={'w-full py-[40px] px-[16px] md:p-[80px] border-[1px] border-black'}>
 				{
@@ -16,7 +28,7 @@ const Box = (props:Props) => {
 				<p className={'text-[16px]'}>{text}</p>
 				{
 					buttonText ? <button
-						className={'w-full mt-[64px] md:px-[24px] py-[16px] md:w-auto border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'}>{buttonText}</button> : <></>
+						className={'w-full mt-[64px] md:px-[24px] py-[16px] md:w-auto border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'} onClick={preText === 'Our story' ? handleGoToAboutUs : handleStayAtHome}>{buttonText}</button> : <></>
 				}
 			</div>
 	);

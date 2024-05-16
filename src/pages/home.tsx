@@ -14,8 +14,15 @@ import ProductImage2 from '../../public/images/pictures/home/products/product2.p
 import ProductImage3 from '../../public/images/pictures/home/products/product3.png'
 import ProductImage4 from '../../public/images/pictures/home/products/product4.png'
 import ProductImage5 from '../../public/images/pictures/home/products/product5.png'
+import {useNavigate} from "react-router-dom";
 
 const Home = () => {
+	const navigate = useNavigate();
+
+	const handleGoToSubscription = ()=>{
+		navigate('/subscription');
+	}
+
 	return (
 		<div>
 			<Navbar/>
@@ -145,7 +152,7 @@ const Home = () => {
 							Experience the convenience and savings of regular flower deliveries with our flexible
 							subscription service - up to 30% more profitable than one-time purchases.
 						</p>
-						<button className={'w-full md:px-[24px] py-[16px] md:w-auto border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'}>
+						<button className={'w-full md:px-[24px] py-[16px] md:w-auto border-black border-[1px] font-medium text-[16px] hover:bg-black hover:text-white'} onClick={handleGoToSubscription}>
 							SUSCRIBE NOW
 						</button>
 					</div>
