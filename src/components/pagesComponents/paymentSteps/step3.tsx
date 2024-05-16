@@ -8,11 +8,11 @@ const Step3 = () => {
 	const {setPaymentSteps} = usePaymentStepState();
 
 	const handleReturnToStep1 = ()=>{
-		setPaymentSteps("step1")
+		setPaymentSteps()
 	}
 
 	const handleReturnToStep2 = ()=>{
-		setPaymentSteps("step2")
+		setPaymentSteps()
 	}
 
 	return (
@@ -42,15 +42,10 @@ const Step3 = () => {
 			<div className={'my-[16px] text-[18px] font-medium'}>3 Payment</div>
 			<div className={'my-[16px] text-[16px] font-medium'}>Pay by card. Your payment is secure.</div>
 			<form action="" className={'mb-[24px]'}>
-				<input type="number"
-					   className={'w-full px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
-					   placeholder={'Card Number'}/>
+				<input type="number" className={'w-full px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'} placeholder={'Card Number'}/>
 				<div className={'md:flex md:justify-between'}>
-					<input type="text"
-						   className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
-						   placeholder={'MM / YY'}/>
-					<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}
-						   placeholder={'CVV Code'}/>
+					<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'} placeholder={'MM / YY'}/>
+					<input type="text" className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'} placeholder={'CVV Code'}/>
 				</div>
 				<button
 					className={'w-full md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] bg-black text-white mt-[5px]'}>

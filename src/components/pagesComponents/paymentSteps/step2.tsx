@@ -9,11 +9,11 @@ const Step2 = () => {
 
 
 	const handleGoToStep3 = ()=>{
-		setPaymentSteps("step3")
+		setPaymentSteps()
 	}
 
 	const handleReturnToStep1 = ()=>{
-		setPaymentSteps("step1")
+		setPaymentSteps()
 	}
 
 	return (

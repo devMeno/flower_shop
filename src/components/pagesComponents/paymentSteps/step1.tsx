@@ -6,7 +6,7 @@ const Step1 = () => {
 	const {setPaymentSteps} = usePaymentStepState();
 
 	const handleGoToStep2 = ()=>{
-		setPaymentSteps("step2");
+		setPaymentSteps();
 	}
 
 	return (
