@@ -3,6 +3,9 @@ import {createContext,useState} from "react";
 export const PaymentStepContext = createContext({
 	paymentSteps: "step1",
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	/**
+	 * @type React.Dispatch<React.SetStateAction<string>>
+	 *     */
 	setPaymentSteps: () => {}
 });
 

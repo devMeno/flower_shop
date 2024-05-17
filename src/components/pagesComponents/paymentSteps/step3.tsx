@@ -8,11 +8,11 @@ const Step3 = () => {
 	const {setPaymentSteps} = usePaymentStepState();
 
 	const handleReturnToStep1 = ()=>{
-		setPaymentSteps()
+		setPaymentSteps('step1')
 	}
 
 	const handleReturnToStep2 = ()=>{
-		setPaymentSteps()
+		setPaymentSteps('step2')
 	}
 
 	return (
