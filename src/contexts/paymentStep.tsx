@@ -1,4 +1,4 @@
-import {createContext,useState} from "react";
+import React, {createContext,useState} from "react";
 
 interface ContextProps {
 	paymentSteps : string,
@@ -15,11 +15,11 @@ export const PaymentStepContext = createContext<ContextProps>({
 	setPaymentSteps : ()=>{}
 });
 
-// @ts-ignore
-export const PaymentStepProvider = ({children}) => {
+
+export const PaymentStepProvider = ({children} : React.ReactNode) => {
 	const [paymentSteps, setPaymentSteps] = useState("step1");
 
-	// @ts-ignore
+
 	return <PaymentStepContext.Provider value={{paymentSteps , setPaymentSteps}}>
 		{children}
 	</PaymentStepContext.Provider>
