@@ -16,7 +16,7 @@ export const PaymentStepContext = createContext<ContextProps>({
 });
 
 
-export const PaymentStepProvider = ({children} : React.ReactNode) => {
+export const PaymentStepProvider = ({children}:any) => {
 	const [paymentSteps, setPaymentSteps] = useState("step1");
 
 
