@@ -1,12 +1,18 @@
 import {createContext,useState} from "react";
 
-export const PaymentStepContext = createContext({
-	paymentSteps: "step1",
+interface ContextProps {
+	paymentSteps : string,
+	setPaymentSteps : React.Dispatch<React.SetStateAction<string>>
+}
+
+/*export const PaymentStepContext = createContext({
+	paymentSteps: 'step1',
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	/**
-	 * @type React.Dispatch<React.SetStateAction<string>>
-	 *     */
 	setPaymentSteps: () => {}
+});*/
+export const PaymentStepContext = createContext<ContextProps>({
+	paymentSteps : "step1",
+	setPaymentSteps : ()=>{}
 });
 
 // @ts-ignore
