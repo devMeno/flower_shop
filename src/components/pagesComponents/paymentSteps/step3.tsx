@@ -2,6 +2,8 @@ import { PiCaretRight } from "react-icons/pi";
 import { PiCheck } from "react-icons/pi";
 import { RxPencil2 } from "react-icons/rx";
 import {usePaymentStepState} from "../../../hooks/usePaymentStepState.tsx";
+import Apple from '../../../../public/images/icons/paymentMethods/Apple.png'
+import Google from '../../../../public/images/icons/paymentMethods/Google.png'
 
 const Step3 = () => {
 
@@ -55,13 +57,13 @@ const Step3 = () => {
 				<div className={'md:flex md:justify-between'}>
 					<button
 						className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}>
-						<div className={'flex mx-auto items-center w-fit'}><img src="/public/images/icons/paymentMethods/Apple.png" alt=""
+						<div className={'flex mx-auto items-center w-fit'}><img src={Apple} alt=""
 							 className={'size-[24px] mr-[5px]'}/> APPLE PAY</div>
 					</button>
 					<button
 						className={'w-full md:w-[49%] px-[10px] md:px-[24px] py-[16px] border-black border-[1px] font-medium text-[16px] mb-[10px]'}>
 						<div className={'flex mx-auto items-center w-fit'}><img
-							src="/public/images/icons/paymentMethods/Google.png" alt=""
+							src={Google} alt=""
 							className={'size-[24px] mr-[5px]'}/> APPLE PAY</div>
 					</button>
 				</div>
